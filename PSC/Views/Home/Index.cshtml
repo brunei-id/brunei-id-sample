@@ -1,0 +1,53 @@
+﻿@using System.Security.Claims;
+@model PSC.ViewModels.UserViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="top">
+    <table>
+        <tr>
+            @if (!string.IsNullOrEmpty(Model.IcNo))
+            {
+                <td class="top-welcome">
+                    Selamat Datang! <a href="">@Model.IcNo</a>
+                </td>
+                <form asp-action="Logout" asp-controller="Authentication" method="post">
+                    <button class="btn btn-lg btn-danger" type="submit">Sign out</button>
+                </form>
+            }
+            else
+            {
+                <td>
+                    <a class="btn btn-lg btn-success" asp-controller="Authentication"
+                   asp-action="Login"> <svg class xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" /></svg>
+                        <span class="log-in">Log Masuk</span></a>
+                </td>
+            }
+
+            <td class="top-toggle">
+                <img class="toggle" src="images/SUN.png" alt="sun"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="main">
+    <div>
+        <img src="images/Emblem_of_Brunei.png" alt="logo" class="logo">
+    </div>
+    <div class="title">
+        PSC RECRUITMENT 2.0
+    </div>
+    <div class="description">
+        SISTEM PENGAMBILAN DALAM TALIAN
+    </div>
+    <div>
+        <img class="images" src="images/SPA_PSCR_2.0_BANNER_2-03.jpg" alt="banner" />
+        <img class="images" src="images/SPA_PSCR_2.0_BANNER_2-02.jpg" alt="banner" />
+        <img class="images" src="images/SPA_PSCR_2.0_BANNER-01.jpg" alt="banner" />
+        <img class="images" src="images/SPA_PSCR_2.0_BANNER_FAILBERKENAAN-01.jpg" alt="banner" />
+        <img class="images" src="images/SPA_PSCR_2.0_BANNER_OVERSEAS_ADS-01.jpg" alt="banner" />
+        <img class="images" src="images/SPA_PSCR_2.0_BANNER-05.jpg" alt="banner" />
+    </div>
+</div>
+

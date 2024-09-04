@@ -1,0 +1,213 @@
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    font-family: arial;
+    color: #14394b;
+    background-image: url("../images/bg_home.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom center;
+}
+
+
+img:hover {
+    cursor: pointer;
+}
+
+.button {
+    background-color: #FFFFFF;
+    color: #14394b;
+    border: 2px solid #14394b;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+    .button:hover {
+        background-color: #499480;
+        border: 2px solid #499480;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+    }
+
+.images {
+    padding: 10px;
+    border-radius: 15px;
+    width: 330px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    padding: 10px;
+}
+
+.top {
+    text-align: right;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+svg {
+    color: #14394b;
+    width: 15px;
+    padding-right: 5px;
+}
+
+.top table {
+    width: 100%;
+    marging-right: 0px;
+    margin: auto;
+}
+
+.top-toggle {
+    width: 60px;
+    padding: 0 10px;
+}
+
+.top-welcome {
+    text-align: left;
+}
+
+    .top-welcome a {
+        color: #499480;
+    }
+
+        .top-welcome a:hover {
+            cursor: pointer;
+        }
+
+.toggle {
+    width: 60px;
+}
+
+.main {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    html {
+        background-size: auto 100%;
+    }
+
+    body {
+        width: 100%;
+        min-width: 80%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .description {
+        text-align: center;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40px;
+        padding: 5px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .images {
+        width: 45%;
+        padding: 3px;
+        border-radius: 5px;
+    }
+
+    .top {
+        text-align: right;
+        vertical-align: middle;
+        padding: 0px 5px;
+    }
+
+        .top table {
+            width: 100%;
+            marging-right: 0px;
+            margin: auto;
+        }
+
+    .top-toggle {
+        width: 50px;
+        padding: 0 5px;
+    }
+
+    .top-welcome {
+        font-size: 10px;
+    }
+
+    .toggle {
+        width: 50px;
+    }
+
+    .button {
+        height: 30px;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .log-in {
+        display: none;
+    }
+
+    svg {
+        padding: 0px;
+    }
+
+    .button {
+        padding: 5px;
+    }
+}
